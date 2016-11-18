@@ -1,0 +1,10 @@
+<rpc message-id="1" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <get-config>
+  	<source>
+  	</source>
+  	<filter type="subtree">
+  		<configuration>
+  		</configuration>
+  	</filter>
+  </get-config>
+</rpc>
