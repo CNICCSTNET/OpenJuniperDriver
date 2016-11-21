@@ -1,7 +1,14 @@
-±¾ÏµÍ³ÊÇÔÚonos 1.8.0°æ±¾µÄ»ù´¡ÉÏ½øĞĞµÄ¶ş´Î¿ª·¢¡£
-±¾ÏµÍ³Ö÷ÒªÊµÏÖµÄÊÇ¶ÔJuniperÂ·ÓÉÆ÷·¢ËÍnetconfÃüÁîµÄ¹¦ÄÜ
+This is a ONOS driver for Juniper router.
 
-    Ô´ÂëÖĞµÄÈı¸öÎÄ¼ş¼ĞÓëonos¸ùÄ¿Â¼µ×ÏÂµÄÎÄ¼ş¼ĞÏà¶ÔÓ¦¡£Èç¹ûÄãÏëÅÜÎÒÃÇ
-Ğ´µÄ´úÂë£¬Çë°´ÕÕÎÄ¼ş¼ĞÖ¸Ê¾µÄÂ·¾¶ÔÚonosÔ´ÂëÖĞÌí¼Ó¶ÔÓ¦µÄÎÄ¼ş¡£²¢ÔÚonos
-µÄ¸ùÄ¿Â¼ÏÂÊäÈëmvn clean install½øĞĞ±àÒë¡£µ±±àÒë³É¹¦ºó£¬¾Í¿ÉÒÔÊ¹ÓÃÎÒÃÇ
-¿ª·¢µÄ×ÓÏµÍ³ÁË¡£
+The code can be divided into three part:
+
+1 The driver. The most important part which compose and parse the XML, and send the XML
+to router.
+
+2 The cli. Build the command which let the users pass parameters to driver.
+
+3 New interfaces. Build some new interfaces in the core. In driver, we implement the interfaces.
+
+Just put the code in corresponding folder of ONOS, and then execute â€œmvn clean installâ€ you can use it.
+
+The version of ONOS we use is 1.8.0, and the juniper router is M10i, Junos 15.1.
